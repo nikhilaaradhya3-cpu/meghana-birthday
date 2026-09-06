@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display');
+}
+
+:root {
+  --blush: #FFF5F8;
+  --rose-light: #FCE7F3;
+  --lavender: #F5E9FF;
+  --champagne: #FFF8E7;
+  --cream: #FFFDF9;
+  --ink: #3A2E35;
+  --ink-soft: #6B5A63;
+  --gold: #C9A96E;
+  --rose-deep: #C97B99;
+  --plum: #8A5A72;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--blush);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rose-deep);
+  border-radius: 8px;
+}
